@@ -26,3 +26,6 @@ Par exemple crepe double chocolat est possible mais pas une crepe double chantil
 - solution 1 : on rajoute dans le constructeur les vérifications (voir commentaire dans le constructeur Chantilly).
 - solution 2 : on couple le design pattern decorator avec le design pattern factory.
 C'est la factory qui a la responsabilité de faire respecter les règles métiers. Cette solution semble mieux respecter le principe de Single Responsability (SOLID).
+
+# Singleton
+Le pattern Singleton sert à avoir la possibilité d'avoir qu'une instance d'un objet. Ce design pattern peut-être utilisé par exemple pour avoir qu'une seule instance d'un logger ou d'une connexion à la base de données (DAO).
