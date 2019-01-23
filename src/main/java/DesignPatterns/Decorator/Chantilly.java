@@ -1,14 +1,14 @@
 package DesignPatterns.Decorator;
 
 public class Chantilly extends DessertDecorator {
-	
-	/*public Chantilly(Dessert dessert) {
-		super(dessert);
-		setPrice(dessert.getPrice() + 0.5); 
-	}*/
 
-	public Chantilly(Dessert dessert) {
+	public Chantilly(Dessert dessert) throws Exception {
 		super(dessert);
+	/*	
+	 * business rules in constructor
+	 * if (dessert.getType().contains("chantilly")) {
+			throw new Exception("double chantilly is not possible");
+		} */
 	}
 	
 	@Override

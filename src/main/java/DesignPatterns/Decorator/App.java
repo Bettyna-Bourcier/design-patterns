@@ -5,7 +5,7 @@ import DesignPatterns.Decorator.ClassesCombination.ChantillyWaffle;
 import DesignPatterns.Decorator.ClassesCombination.Dessert;
 
 public class App {
-	public static void main( String[] args )
+	public static void main( String[] args ) throws Exception
     {
 		System.out.println("Classes combination");
 		Dessert dessert = new ChantillyWaffle();
@@ -25,6 +25,9 @@ public class App {
 					)
 				);
 		System.out.println("Type dessert : " + dessert4.getType() + "; prix dessert : " + dessert4.getPrice());
+		
+		DessertFactory factory = new DessertFactory();
+		DesignPatterns.Decorator.Dessert dessert5 = factory.addDecorator(new Chantilly(new Crepe()), "CHANTILLY");
 		
     }
 }

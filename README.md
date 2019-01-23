@@ -17,3 +17,12 @@ Sans utiliser le design pattern Decorator, il y a beaucoup de classes à créer.
 ## Exemple avec le pattern decorator
 
 Le design est plus flexible. On crée les classes de bases et les ingrédients puis on compose le tout au runtime.
+
+## Phase 2 : challenge du pattern (règles métiers)
+
+Comment intégrer des régles métiers en utilisant le design decorator ?
+Par exemple crepe double chocolat est possible mais pas une crepe double chantilly.
+
+- solution 1 : on rajoute dans le constructeur les vérifications (voir commentaire dans le constructeur Chantilly).
+- solution 2 : on couple le design pattern decorator avec le design pattern factory.
+C'est la factory qui a la responsabilité de faire respecter les règles métiers. Cette solution semble mieux respecter le principe de Single Responsability (SOLID).
